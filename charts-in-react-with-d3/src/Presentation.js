@@ -1,7 +1,4 @@
-// Import React
 import React from "react";
-
-// Import Spectacle Core tags
 import {
   Appear,
   BlockQuote,
@@ -21,17 +18,11 @@ import {
   Spectacle,
   Text
 } from "spectacle";
-
-// Import image preloader util
 import preloader from "spectacle/lib/utils/preloader";
-
-// Import theme
 import createTheme from "spectacle/lib/themes/default";
-
-// Import custom component
+import CodeSlide from 'spectacle-code-slide';
 import Interactive from "./Interactive";
 
-// Require CSS
 require("normalize.css");
 require("spectacle/lib/themes/default/index.css");
 
@@ -45,7 +36,7 @@ const images = {
 preloader(images);
 
 const theme = createTheme({
-  primary: "#ff4081"
+  primary: "#76a700",
 });
 
 export default class Presentation extends React.Component {
@@ -53,6 +44,53 @@ export default class Presentation extends React.Component {
     return (
       <Spectacle theme={theme}>
         <Deck transition={["zoom", "slide"]} transitionDuration={500}>
+          <Slide transition={["zoom"]} bgColor="primary">
+            <Heading size={1} fit caps lineHeight={1} margin="1em 0 0">
+              Creating Charts in React
+            </Heading>
+
+            <Text caps textSize="4rem" textColor="tertiary" margin="0 0 2em">with D3</Text>
+
+            <Layout>
+              <Fill>
+                <Text textSize="2rem" textColor="tertiary">Jonathon Kelly</Text>
+              </Fill>
+
+              <Fill>
+                <Text textSize="2rem" textColor="tertiary">|</Text>
+              </Fill>
+
+              <Fill>
+                <Link href="mailto:jonathon@insidersbyte.com">
+                  <Text textSize="2rem" textColor="tertiary">jonathon@insidersbyte.com</Text>
+                </Link>
+              </Fill>
+
+              <Fill>
+                <Text textSize="2rem" textColor="tertiary">|</Text>
+              </Fill>
+
+              <Fill>
+                <Link href="https://twitter.com/InsidersByte">
+                  <Text textSize="2rem" textColor="tertiary">@insidersbyte</Text>
+                </Link>
+              </Fill>
+            </Layout>
+        </Slide>
+
+        <CodeSlide
+          transition={[]}
+          lang="js"
+          code={require("./deck.js").default}
+          ranges={[
+            { loc: [0, 29], title: "Walking through some code" },
+            { loc: [0, 1], title: "The Beginning" },
+            { loc: [1, 2] },
+            { loc: [1, 2], note: "Heres a note!" },
+            { loc: [2, 3] },
+            { loc: [20, 28] },
+          ]}/>
+
           <Slide transition={["zoom"]} bgColor="primary">
             <Heading size={1} fit caps lineHeight={1} textColor="black">
               Spectacle
