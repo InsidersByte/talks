@@ -3,10 +3,10 @@
 import React, { Component } from 'react';
 import preloader from 'spectacle/lib/utils/preloader';
 import createTheme from 'spectacle/lib/themes/default';
-import { Deck, Fill, Heading, Layout, Link, Slide, Spectacle, Text } from 'spectacle';
-
-require('normalize.css');
-require('spectacle/lib/themes/default/index.css');
+import { Deck, Fill, Heading, Layout, Link, Slide, Spectacle, Text, CodePane } from 'spectacle';
+import 'normalize.css';
+import 'spectacle/lib/themes/default/index.css';
+import BasicPieChart from './BasicPieChart';
 
 const images = {};
 
@@ -51,6 +51,45 @@ export default class Presentation extends Component {
                 </Link>
               </Fill>
             </Layout>
+          </Slide>
+
+          <Slide>
+            <Heading fit>Charts in React</Heading>
+            <Heading>with D3</Heading>
+          </Slide>
+
+          <Slide>
+            <Heading>Why do we need another way to create charts?</Heading>
+          </Slide>
+
+          <Slide>
+            <Heading>What options exist out there?</Heading>
+          </Slide>
+
+          <Slide>
+            <Heading>The solution</Heading>
+          </Slide>
+
+          <Slide>
+            <Heading>Basic Example</Heading>
+          </Slide>
+
+          <Slide bgColor="white">
+            <Heading size={2} textColor="primary">Basic Pie Chart</Heading>
+
+            <BasicPieChart />
+          </Slide>
+
+          <Slide>
+            <CodePane
+              lang="jsx"
+              source={require("./BasicPieChart.example").default}
+              margin="20px auto"
+            />
+          </Slide>
+
+          <Slide>
+            <Heading>Live Coding</Heading>
           </Slide>
         </Deck>
       </Spectacle>
