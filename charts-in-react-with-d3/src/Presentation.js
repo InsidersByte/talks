@@ -143,9 +143,17 @@ const Presentation = () => (
         <Heading caps>Render the Output from D3</Heading>
       </Slide>
 
-      <Slide notes="Live coding">
+      <Slide notes="Live coding #1">
         <Link href="https://bl.ocks.org/mbostock/3887235" textColor="tertiary" target="_blank">
           <Heading margin="0 0 0.5em">Basic Pie Chart</Heading>
+        </Link>
+
+        <Text textColor="tertiary">Live Coding</Text>
+      </Slide>
+
+      <Slide notes="Live coding #2">
+        <Link href="https://bl.ocks.org/mbostock/3887235" textColor="tertiary" target="_blank">
+          <Heading margin="0 0 0.5em">Pie Chart</Heading>
         </Link>
 
         <Text textColor="tertiary">Live Coding</Text>
