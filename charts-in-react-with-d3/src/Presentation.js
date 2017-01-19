@@ -159,11 +159,19 @@ const Presentation = () => (
         </Link>
       </Slide>
 
+      <Slide notes="Live coding #1">
+        <Heading margin="0 0 0.5em">Circle Dragging</Heading>
+
+        <Link href="https://bl.ocks.org/mbostock/22994cc97fefaeede0d861e6815a847e" target="_blank">
+          <Text textColor="tertiary">Mike Bostock’s Circle Dragging</Text>
+        </Link>
+      </Slide>
+
       <Slide>
         <Heading margin="0 0 0.5em">React and D3 3 ways</Heading>
 
         <List textColor="tertiary">
-          <Appear><ListItem margin="0 0 0.5em">Hand Carving</ListItem></Appear>
+          <Appear><ListItem margin="0 0 0.5em">Use D3 for Math, React for State + DOM</ListItem></Appear>
           <Appear><ListItem margin="0 0 0.5em">React Charting Library</ListItem></Appear>
           <Appear><ListItem margin="0 0 0.5em">Integrating Pure D3 with React</ListItem></Appear>
         </List>
