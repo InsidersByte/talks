@@ -198,7 +198,7 @@ const Presentation = () => (
       </Slide>
 
       <Slide>
-        <Heading caps>Thank you for listening</Heading>
+        <Heading caps>Add Some Links</Heading>
       </Slide>
     </Deck>
   </Spectacle>
