@@ -99,15 +99,17 @@ const Presentation = () => (
 
           <Appear>
             <ListItem>
-              <Link href="https://github.com/Olical/react-faux-dom" target="_blank" textColor="tertiary">
-                react-faux-dom
+              <Link href="https://github.com/Olical/d3-react" target="_blank" textColor="tertiary">
+                d3-react
               </Link>
             </ListItem>
           </Appear>
 
           <Appear>
             <ListItem>
-              ... (Find more)
+              <Link href="https://github.com/Olical/react-faux-dom" target="_blank" textColor="tertiary">
+                react-faux-dom
+              </Link>
             </ListItem>
           </Appear>
         </List>
@@ -119,15 +121,33 @@ const Presentation = () => (
         <List textColor="tertiary">
           <Appear>
             <ListItem>
-              <Link href="https://github.com/FormidableLabs/victory" target="_blank" textColor="tertiary">
-                Victory
+              <Link href="https://github.com/rma-consulting/react-easy-chart" target="_blank" textColor="tertiary">
+                react-easy-chart
               </Link>
             </ListItem>
           </Appear>
 
           <Appear>
             <ListItem>
-              ... (Find more)
+              <Link href="https://github.com/rumble-charts/rumble-charts" target="_blank" textColor="tertiary">
+                rumble-charts
+              </Link>
+            </ListItem>
+          </Appear>
+
+          <Appear>
+            <ListItem>
+              <Link href="https://github.com/recharts/recharts" target="_blank" textColor="tertiary">
+                recharts
+              </Link>
+            </ListItem>
+          </Appear>
+
+          <Appear>
+            <ListItem>
+              <Link href="https://github.com/FormidableLabs/victory" target="_blank" textColor="tertiary">
+                victory
+              </Link>
             </ListItem>
           </Appear>
         </List>
@@ -148,7 +168,7 @@ const Presentation = () => (
       </Slide>
 
       <Slide>
-        <Heading caps>Render the Output from D3</Heading>
+        <Heading caps>Use D3 for Math, React for State + DOM</Heading>
       </Slide>
 
       <Slide notes="Live coding #1">
