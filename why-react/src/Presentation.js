@@ -113,6 +113,7 @@ export default class Presentation extends Component {
 
             <List textColor="tertiary">
               <Appear><ListItem margin="0 0 0.5em">The chrome dev tools are awesome!</ListItem></Appear>
+              <Appear><ListItem margin="0 0 0.5em">The ecosystem is amazing!</ListItem></Appear>
             </List>
           </Slide>
 
