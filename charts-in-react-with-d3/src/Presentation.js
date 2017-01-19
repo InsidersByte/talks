@@ -99,6 +99,14 @@ const Presentation = () => (
 
           <Appear>
             <ListItem>
+              <Link href="https://github.com/Olical/react-faux-dom" target="_blank" textColor="tertiary">
+                react-faux-dom
+              </Link>
+            </ListItem>
+          </Appear>
+
+          <Appear>
+            <ListItem>
               ... (Find more)
             </ListItem>
           </Appear>
@@ -144,19 +152,25 @@ const Presentation = () => (
       </Slide>
 
       <Slide notes="Live coding #1">
-        <Link href="https://bl.ocks.org/mbostock/3887235" textColor="tertiary" target="_blank">
-          <Heading margin="0 0 0.5em">Basic Pie Chart</Heading>
-        </Link>
+        <Heading margin="0 0 0.5em">Pie Chart</Heading>
 
-        <Text textColor="tertiary">Live Coding</Text>
+        <Link href="https://bl.ocks.org/mbostock/3887235" target="_blank">
+          <Text textColor="tertiary">Mike Bostock’s Pie Chart</Text>
+        </Link>
       </Slide>
 
-      <Slide notes="Live coding #2">
-        <Link href="https://bl.ocks.org/mbostock/3887235" textColor="tertiary" target="_blank">
-          <Heading margin="0 0 0.5em">Pie Chart</Heading>
-        </Link>
+      <Slide>
+        <Heading margin="0 0 0.5em">React and D3 3 ways</Heading>
 
-        <Text textColor="tertiary">Live Coding</Text>
+        <List textColor="tertiary">
+          <Appear><ListItem margin="0 0 0.5em">Hand Carving</ListItem></Appear>
+          <Appear><ListItem margin="0 0 0.5em">React Charting Library</ListItem></Appear>
+          <Appear><ListItem margin="0 0 0.5em">Integrating Pure D3 with React</ListItem></Appear>
+        </List>
+      </Slide>
+
+      <Slide>
+        <Heading caps>Thank you for listening</Heading>
       </Slide>
     </Deck>
   </Spectacle>
