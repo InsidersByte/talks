@@ -1,6 +1,6 @@
 /* eslint-disable import/no-webpack-loader-syntax */
 
-import React, { Component } from 'react';
+import React from 'react';
 import preloader from 'spectacle/lib/utils/preloader';
 import createTheme from 'spectacle/lib/themes/default';
 import { Deck, Fill, Heading, Layout, Link, Slide, Spectacle, Text, BlockQuote, Quote, Cite, Appear, List, ListItem, Image } from 'spectacle';
