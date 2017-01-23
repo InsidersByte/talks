@@ -1,6 +1,6 @@
 /* eslint-disable import/no-webpack-loader-syntax */
 
-import React, { Component } from 'react';
+import React from 'react';
 import preloader from 'spectacle/lib/utils/preloader';
 import createTheme from 'spectacle/lib/themes/default';
 import { Deck, Fill, Heading, Layout, Link, Slide, Spectacle, Text, Appear, List, ListItem } from 'spectacle';
@@ -67,11 +67,10 @@ const Presentation = () => (
         <Heading caps>Requirements</Heading>
 
         <List textColor="tertiary">
-          <Appear><ListItem>DOM manipulation to be handled by React</ListItem></Appear>
-          <Appear><ListItem>Single source of truth</ListItem></Appear>
-          <Appear><ListItem>To be React Components</ListItem></Appear>
-          <Appear><ListItem>Flexible</ListItem></Appear>
-          <Appear><ListItem>Support Drag and Drop (DnD)</ListItem></Appear>
+          <Appear><ListItem margin="0 0 0.5em">DOM manipulation to be handled by React</ListItem></Appear>
+          <Appear><ListItem margin="0 0 0.5em">Single source of truth</ListItem></Appear>
+          <Appear><ListItem margin="0 0 0.5em">Flexible</ListItem></Appear>
+          <Appear><ListItem margin="0 0 0.5em">Support Drag and Drop (DnD)</ListItem></Appear>
         </List>
       </Slide>
 
@@ -90,7 +89,7 @@ const Presentation = () => (
 
         <List textColor="tertiary">
           <Appear>
-            <ListItem>
+            <ListItem margin="0 0 0.5em">
               <Link href="http://react-d3-library.github.io/" target="_blank" textColor="tertiary">
                 react-d3-library
               </Link>
@@ -98,7 +97,7 @@ const Presentation = () => (
           </Appear>
 
           <Appear>
-            <ListItem>
+            <ListItem margin="0 0 0.5em">
               <Link href="https://github.com/Olical/d3-react" target="_blank" textColor="tertiary">
                 d3-react
               </Link>
@@ -106,7 +105,7 @@ const Presentation = () => (
           </Appear>
 
           <Appear>
-            <ListItem>
+            <ListItem margin="0 0 0.5em">
               <Link href="https://github.com/Olical/react-faux-dom" target="_blank" textColor="tertiary">
                 react-faux-dom
               </Link>
@@ -120,7 +119,7 @@ const Presentation = () => (
 
         <List textColor="tertiary">
           <Appear>
-            <ListItem>
+            <ListItem margin="0 0 0.5em">
               <Link href="https://github.com/rma-consulting/react-easy-chart" target="_blank" textColor="tertiary">
                 react-easy-chart
               </Link>
@@ -128,7 +127,7 @@ const Presentation = () => (
           </Appear>
 
           <Appear>
-            <ListItem>
+            <ListItem margin="0 0 0.5em">
               <Link href="https://github.com/rumble-charts/rumble-charts" target="_blank" textColor="tertiary">
                 rumble-charts
               </Link>
@@ -136,7 +135,7 @@ const Presentation = () => (
           </Appear>
 
           <Appear>
-            <ListItem>
+            <ListItem margin="0 0 0.5em">
               <Link href="https://github.com/recharts/recharts" target="_blank" textColor="tertiary">
                 recharts
               </Link>
@@ -144,7 +143,7 @@ const Presentation = () => (
           </Appear>
 
           <Appear>
-            <ListItem>
+            <ListItem margin="0 0 0.5em">
               <Link href="https://github.com/FormidableLabs/victory" target="_blank" textColor="tertiary">
                 victory
               </Link>
@@ -172,7 +171,7 @@ const Presentation = () => (
       </Slide>
 
       <Slide notes="Live coding #1">
-        <Heading margin="0 0 0.5em">Pie Chart</Heading>
+        <Heading caps margin="0 0 0.5em">Pie Chart</Heading>
 
         <Link href="https://bl.ocks.org/mbostock/3887235" target="_blank">
           <Text textColor="tertiary">Mike Bostock’s Pie Chart</Text>
@@ -180,7 +179,7 @@ const Presentation = () => (
       </Slide>
 
       <Slide notes="Live coding #1">
-        <Heading margin="0 0 0.5em">Circle Dragging</Heading>
+        <Heading caps margin="0 0 0.5em">Circle Dragging</Heading>
 
         <Link href="https://bl.ocks.org/mbostock/22994cc97fefaeede0d861e6815a847e" target="_blank">
           <Text textColor="tertiary">Mike Bostock’s Circle Dragging</Text>
@@ -188,7 +187,7 @@ const Presentation = () => (
       </Slide>
 
       <Slide>
-        <Heading margin="0 0 0.5em">React and D3 3 ways</Heading>
+        <Heading caps margin="0 0 0.5em">React and D3, 3 ways</Heading>
 
         <List textColor="tertiary">
           <Appear><ListItem margin="0 0 0.5em">Use D3 for Math, React for State + DOM</ListItem></Appear>
@@ -198,7 +197,35 @@ const Presentation = () => (
       </Slide>
 
       <Slide>
-        <Heading caps>Add Some Links</Heading>
+        <Heading caps margin="0 0 0.5em">Links</Heading>
+
+        <List textColor="tertiary" margin="0 0 1.5em">
+          <ListItem margin="0 0 0.5em" textSize="2.45rem">
+            This Presentation -&nbsp;
+
+            <Link href="http://bit.ly/ChartsInReactWithD3Presentation" target="_blank" textColor="tertiary">
+              http://bit.ly/ChartsInReactWithD3Presentation
+            </Link>
+          </ListItem>
+
+          <ListItem margin="0 0 0.5em" textSize="2.45rem">
+            Code Examples -&nbsp;
+
+            <Link href="http://bit.ly/ChartsInReactWithD3Code" target="_blank" textColor="tertiary">
+              http://bit.ly/ChartsInReactWithD3Code
+            </Link>
+          </ListItem>
+        </List>
+
+        <List textColor="tertiary">
+          <ListItem margin="0 0 0.5em" textSize="2.45rem">
+            D3 -&nbsp;
+
+            <Link href="https://github.com/d3/d3" target="_blank" textColor="tertiary">
+              https://github.com/d3/d3
+            </Link>
+          </ListItem>
+        </List>
       </Slide>
     </Deck>
   </Spectacle>
