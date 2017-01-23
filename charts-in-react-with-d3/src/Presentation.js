@@ -199,7 +199,7 @@ const Presentation = () => (
       <Slide>
         <Heading caps margin="0 0 0.5em">Links</Heading>
 
-        <List textColor="tertiary" margin="0 0 1.5em">
+        <List textColor="tertiary">
           <ListItem margin="0 0 0.5em" textSize="2.45rem">
             This Presentation -&nbsp;
 
@@ -213,16 +213,6 @@ const Presentation = () => (
 
             <Link href="http://bit.ly/ChartsInReactWithD3Code" target="_blank" textColor="tertiary">
               http://bit.ly/ChartsInReactWithD3Code
-            </Link>
-          </ListItem>
-        </List>
-
-        <List textColor="tertiary">
-          <ListItem margin="0 0 0.5em" textSize="2.45rem">
-            D3 -&nbsp;
-
-            <Link href="https://github.com/d3/d3" target="_blank" textColor="tertiary">
-              https://github.com/d3/d3
             </Link>
           </ListItem>
         </List>
