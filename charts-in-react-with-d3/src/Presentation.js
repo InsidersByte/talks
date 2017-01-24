@@ -18,7 +18,7 @@ const theme = createTheme({
 const Presentation = () => (
   <Spectacle theme={theme}>
     <Deck transition={['zoom', 'slide']} transitionDuration={500}>
-      <Slide>
+      <Slide notes="Investors and advisors in digitally native financial services">
         <Heading caps margin="0 0 0.5em">Jonathon Kelly</Heading>
 
         <Layout>
@@ -50,12 +50,12 @@ const Presentation = () => (
         </Layout>
       </Slide>
 
-      <Slide notes="Objective: to introduce a method of creating charts in React with D3">
+      <Slide>
         <Heading fit caps>Charts in React</Heading>
         <Appear><Heading caps>with D3</Heading></Appear>
       </Slide>
 
-      <Slide notes="Every time we pick a new framework we have the same problems to solve">
+      <Slide notes="1280 lines of JavaScript in one file">
         <Heading caps>Why?</Heading>
       </Slide>
 
@@ -85,7 +85,7 @@ const Presentation = () => (
       </Slide>
 
       <Slide>
-        <Heading>A Hybrid Approach</Heading>
+        <Heading>Integrating Pure D3 with React</Heading>
 
         <List textColor="tertiary">
           <Appear>
@@ -115,7 +115,7 @@ const Presentation = () => (
       </Slide>
 
       <Slide>
-        <Heading>The React Way</Heading>
+        <Heading>React Charting Libraries</Heading>
 
         <List textColor="tertiary">
           <Appear>
@@ -191,8 +191,17 @@ const Presentation = () => (
 
         <List textColor="tertiary">
           <Appear><ListItem margin="0 0 0.5em">Use D3 for Math, React for State + DOM</ListItem></Appear>
-          <Appear><ListItem margin="0 0 0.5em">React Charting Library</ListItem></Appear>
+          <Appear><ListItem margin="0 0 0.5em">React Charting Libraries</ListItem></Appear>
           <Appear><ListItem margin="0 0 0.5em">Integrating Pure D3 with React</ListItem></Appear>
+        </List>
+      </Slide>
+
+      <Slide>
+        <Heading caps margin="0 0 0.5em">Looking to the future</Heading>
+
+        <List textColor="tertiary">
+          <Appear><ListItem margin="0 0 0.5em">Animations</ListItem></Appear>
+          <Appear><ListItem margin="0 0 0.5em">Performance</ListItem></Appear>
         </List>
       </Slide>
 
@@ -201,7 +210,7 @@ const Presentation = () => (
 
         <List textColor="tertiary">
           <ListItem margin="0 0 0.5em" textSize="2.45rem">
-            This Presentation -&nbsp;
+            This Presentation:&nbsp;
 
             <Link href="http://bit.ly/ChartsInReactWithD3Presentation" target="_blank" textColor="tertiary">
               http://bit.ly/ChartsInReactWithD3Presentation
@@ -209,7 +218,7 @@ const Presentation = () => (
           </ListItem>
 
           <ListItem margin="0 0 0.5em" textSize="2.45rem">
-            Code Examples -&nbsp;
+            Code Examples:&nbsp;
 
             <Link href="http://bit.ly/ChartsInReactWithD3Code" target="_blank" textColor="tertiary">
               http://bit.ly/ChartsInReactWithD3Code
