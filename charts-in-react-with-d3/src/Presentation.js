@@ -197,11 +197,12 @@ const Presentation = () => (
       </Slide>
 
       <Slide>
-        <Heading caps margin="0 0 0.5em">Looking to the future</Heading>
+        <Heading caps margin="0 0 0.5em">What's next?</Heading>
 
         <List textColor="tertiary">
           <Appear><ListItem margin="0 0 0.5em">Animations</ListItem></Appear>
           <Appear><ListItem margin="0 0 0.5em">Performance</ListItem></Appear>
+          <Appear><ListItem margin="0 0 0.5em">No D3?</ListItem></Appear>
         </List>
       </Slide>
 
