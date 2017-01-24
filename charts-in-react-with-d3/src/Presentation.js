@@ -50,7 +50,7 @@ const Presentation = () => (
         </Layout>
       </Slide>
 
-      <Slide>
+      <Slide notes="Objective: I think it's pretty safe to say that creating charts is complicated. In this talk I am hoping to show you some different ways that you can create charts in React in the hope that it will give you a starting point from which you can build your own charts">
         <Heading fit caps>Charts in React</Heading>
         <Appear><Heading caps>with D3</Heading></Appear>
       </Slide>
