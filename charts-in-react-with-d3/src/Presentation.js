@@ -178,7 +178,7 @@ const Presentation = () => (
         </Link>
       </Slide>
 
-      <Slide notes="Live coding #1">
+      <Slide notes="Live coding #2">
         <Heading caps margin="0 0 0.5em">Circle Dragging</Heading>
 
         <Link href="https://bl.ocks.org/mbostock/22994cc97fefaeede0d861e6815a847e" target="_blank">

@@ -1,13 +1,10 @@
 import React from 'react';
-import preloader from 'spectacle/lib/utils/preloader';
 import createTheme from 'spectacle/lib/themes/default';
-import { Deck, Fill, Heading, Layout, Link, Slide, Text } from 'spectacle';
+import { Deck, Link, Slide, List, ListItem } from 'spectacle';
 import 'normalize.css';
 import 'spectacle/lib/themes/default/index.css';
-
-const images = {};
-
-preloader(images);
+import IntroductionSlide from './IntroductionSlide';
+import Title from './Title';
 
 const theme = createTheme({
   primary: '#76a700',
@@ -15,36 +12,80 @@ const theme = createTheme({
 
 const Presentation = () => (
   <Deck transition={['zoom', 'slide']} transitionDuration={500} theme={theme}>
-    <Slide notes="Investors and advisors in digitally native financial services">
-      <Heading caps margin="0 0 0.5em">Jonathon Kelly</Heading>
+    <IntroductionSlide />
 
-      <Layout>
-        <Fill>
-          <Link href="mailto:jonathon@insidersbyte.com" target="_blank">
-            <Text textSize="1.8rem" textColor="tertiary">jonathon@insidersbyte.com</Text>
+    <Slide notes="Objective: To introduce you to React and inspire you to go out there and use it.">
+      <Title>An Introduction to React.js</Title>
+    </Slide>
+
+    <Slide>
+      <Title>What is React?</Title>
+    </Slide>
+
+    <Slide>
+      <Title>What Isn't React</Title>
+    </Slide>
+
+    <Slide>
+      <Title>Application State</Title>
+    </Slide>
+
+    <Slide>
+      <Title>Components</Title>
+    </Slide>
+
+    <Slide>
+      <Title>Rendering</Title>
+    </Slide>
+
+    <Slide>
+      <Title>Jsx</Title>
+    </Slide>
+
+    <Slide>
+      <Title>Props</Title>
+    </Slide>
+
+    <Slide>
+      <Title>Demo Time</Title>
+    </Slide>
+
+    <Slide>
+      <Title>That's React</Title>
+    </Slide>
+
+    <Slide>
+      <Title>Developer Experience</Title>
+    </Slide>
+
+    <Slide>
+      <Title>This Presentation is written in React</Title>
+    </Slide>
+
+    <Slide>
+      <Title>Where To Go From Here?</Title>
+    </Slide>
+
+    <Slide>
+      <Title margin="0 0 0.5em">Links</Title>
+
+      <List textColor="tertiary">
+        <ListItem margin="0 0 0.5em" textSize="2.45rem">
+          This Presentation:&nbsp;
+
+          <Link href="http://bit.ly/ChartsInReactWithD3Presentation" target="_blank" textColor="tertiary">
+            Coming Soon
           </Link>
-        </Fill>
+        </ListItem>
 
-        <Fill>
-          <Text textSize="1.8rem" textColor="tertiary">|</Text>
-        </Fill>
+        <ListItem margin="0 0 0.5em" textSize="2.45rem">
+          Code Examples:&nbsp;
 
-        <Fill>
-          <Link href="https://www.insidersbyte.com" target="_blank">
-            <Text textSize="1.8rem" textColor="tertiary">insidersbyte.com</Text>
+          <Link href="http://bit.ly/ChartsInReactWithD3Code" target="_blank" textColor="tertiary">
+            Coming Soon
           </Link>
-        </Fill>
-
-        <Fill>
-          <Text textSize="1.8rem" textColor="tertiary">|</Text>
-        </Fill>
-
-        <Fill>
-          <Link href="https://twitter.com/InsidersByte" target="_blank">
-            <Text textSize="1.8rem" textColor="tertiary">@insidersbyte</Text>
-          </Link>
-        </Fill>
-      </Layout>
+        </ListItem>
+      </List>
     </Slide>
   </Deck>
 );
