@@ -81,10 +81,10 @@ const Presentation = () => (
       <Title margin="0 0 0.5em">Links</Title>
 
       <List textColor="tertiary">
-        <ListItem margin="0 0 0.5em" textSize="2.45rem">
+        <ListItem margin="0 0 0.5em" textSize="2.3rem">
           This Presentation:&nbsp;
 
-          <Link href="http://bit.ly/http://bit.ly/IntroductionToReactPresentation" target="_blank" textColor="tertiary">
+          <Link href="http://bit.ly/IntroductionToReactPresentation" target="_blank" textColor="tertiary">
             http://bit.ly/IntroductionToReactPresentation
           </Link>
         </ListItem>
