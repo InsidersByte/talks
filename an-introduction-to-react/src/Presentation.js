@@ -1,10 +1,11 @@
 import React from 'react';
 import createTheme from 'spectacle/lib/themes/default';
-import { Deck, Link, Slide, List, ListItem } from 'spectacle';
+import { Deck, Link, Slide, List, ListItem, CodePane, Heading, ComponentPlayground } from 'spectacle';
 import 'normalize.css';
 import 'spectacle/lib/themes/default/index.css';
 import IntroductionSlide from './IntroductionSlide';
 import Title from './Title';
+import { simpleJsx, simpleJs, props } from './codeExamples';
 
 const theme = createTheme({
   primary: '#76a700',
@@ -27,23 +28,27 @@ const Presentation = () => (
     </Slide>
 
     <Slide>
-      <Title>Application State</Title>
-    </Slide>
-
-    <Slide>
-      <Title>Components</Title>
-    </Slide>
-
-    <Slide>
-      <Title>Rendering</Title>
-    </Slide>
-
-    <Slide>
       <Title>Jsx</Title>
     </Slide>
 
     <Slide>
+      <CodePane lang="jsx" textSize="2rem" source={simpleJsx} />
+
+      <Heading caps size={3} textColor="tertiary" margin="1rem 0">⬇️</Heading>
+
+      <CodePane lang="js" textSize="2rem" source={simpleJs} />
+    </Slide>
+
+    <Slide>
       <Title>Props</Title>
+    </Slide>
+
+    <Slide maxWidth="90%">
+      <ComponentPlayground code={props} />
+    </Slide>
+
+    <Slide>
+      <Title>Application State</Title>
     </Slide>
 
     <Slide>
@@ -63,7 +68,13 @@ const Presentation = () => (
     </Slide>
 
     <Slide>
-      <Title>Where To Go From Here?</Title>
+      <Title margin="0 0 0.5em">What's Next?</Title>
+
+      <List textColor="tertiary">
+        <ListItem margin="0 0 0.5em" textSize="2.45rem">
+          Coming Soon
+        </ListItem>
+      </List>
     </Slide>
 
     <Slide>
@@ -73,16 +84,8 @@ const Presentation = () => (
         <ListItem margin="0 0 0.5em" textSize="2.45rem">
           This Presentation:&nbsp;
 
-          <Link href="http://bit.ly/ChartsInReactWithD3Presentation" target="_blank" textColor="tertiary">
-            Coming Soon
-          </Link>
-        </ListItem>
-
-        <ListItem margin="0 0 0.5em" textSize="2.45rem">
-          Code Examples:&nbsp;
-
-          <Link href="http://bit.ly/ChartsInReactWithD3Code" target="_blank" textColor="tertiary">
-            Coming Soon
+          <Link href="http://bit.ly/http://bit.ly/IntroductionToReactPresentation" target="_blank" textColor="tertiary">
+            http://bit.ly/IntroductionToReactPresentation
           </Link>
         </ListItem>
       </List>
