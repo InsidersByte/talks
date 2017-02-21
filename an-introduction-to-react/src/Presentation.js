@@ -1,11 +1,11 @@
 import React from 'react';
 import createTheme from 'spectacle/lib/themes/default';
-import { Deck, Link, Slide, List, ListItem, CodePane, Heading, ComponentPlayground } from 'spectacle';
+import { Deck, Link, Slide, List, ListItem, CodePane, Heading, ComponentPlayground, Appear } from 'spectacle';
 import 'normalize.css';
 import 'spectacle/lib/themes/default/index.css';
 import IntroductionSlide from './IntroductionSlide';
 import Title from './Title';
-import { simpleJsx, simpleJs, props } from './codeExamples';
+import { simpleJsx, simpleJs, props, state, lifecycles } from './codeExamples';
 
 const theme = createTheme({
   primary: '#76a700',
@@ -34,9 +34,9 @@ const Presentation = () => (
     <Slide>
       <CodePane lang="jsx" textSize="2rem" source={simpleJsx} />
 
-      <Heading caps size={3} textColor="tertiary" margin="1rem 0">⬇️</Heading>
+      <Appear><Heading caps size={3} textColor="tertiary" margin="1rem 0">⬇️</Heading></Appear>
 
-      <CodePane lang="js" textSize="2rem" source={simpleJs} />
+      <Appear><CodePane lang="js" textSize="2rem" source={simpleJs} /></Appear>
     </Slide>
 
     <Slide>
@@ -48,7 +48,11 @@ const Presentation = () => (
     </Slide>
 
     <Slide>
-      <Title>Application State</Title>
+      <Title>State</Title>
+    </Slide>
+
+    <Slide maxWidth="90%">
+      <ComponentPlayground code={state} />
     </Slide>
 
     <Slide>
@@ -56,7 +60,69 @@ const Presentation = () => (
     </Slide>
 
     <Slide>
-      <Title>That's React</Title>
+      <Title>Component Lifecycles</Title>
+    </Slide>
+
+    <Slide>
+      <Title>Mounting</Title>
+
+      <List textColor="tertiary">
+        <ListItem margin="0 0 0.5em" textSize="2.45rem">
+          constructor&#40;&#41;
+        </ListItem>
+
+        <ListItem margin="0 0 0.5em" textSize="2.45rem">
+          componentWillUnmount&#40;&#41;
+        </ListItem>
+
+        <ListItem margin="0 0 0.5em" textSize="2.45rem">
+          render&#40;&#41;
+        </ListItem>
+
+        <ListItem margin="0 0 0.5em" textSize="2.45rem">
+          componentDidMount&#40;&#41;
+        </ListItem>
+      </List>
+    </Slide>
+
+    <Slide>
+      <Title>Updating</Title>
+
+      <List textColor="tertiary">
+        <ListItem margin="0 0 0.5em" textSize="2.45rem">
+          componentWillReceiveProps&#40;&#41;
+        </ListItem>
+
+        <ListItem margin="0 0 0.5em" textSize="2.45rem">
+          shouldComponentUpdate&#40;&#41;
+        </ListItem>
+
+        <ListItem margin="0 0 0.5em" textSize="2.45rem">
+          componentWillUpdate&#40;&#41;
+        </ListItem>
+
+        <ListItem margin="0 0 0.5em" textSize="2.45rem">
+          render&#40;&#41;
+        </ListItem>
+
+        <ListItem margin="0 0 0.5em" textSize="2.45rem">
+          componentDidUpdate&#40;&#41;
+        </ListItem>
+      </List>
+    </Slide>
+
+    <Slide>
+      <Title>Unmounting</Title>
+
+      <List textColor="tertiary">
+        <ListItem margin="0 0 0.5em" textSize="2.45rem">
+          componentWillUnmount&#40;&#41;
+        </ListItem>
+      </List>
+    </Slide>
+
+    <Slide maxWidth="90%">
+      <ComponentPlayground code={lifecycles} />
     </Slide>
 
     <Slide>
