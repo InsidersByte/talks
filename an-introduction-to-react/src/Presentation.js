@@ -210,8 +210,8 @@ const Presentation = () => (
         <Heading size={1} caps margin="0.5em 0 0.5em">Thanks!</Heading>
       </Appear>
 
-      <Appear>
-        <List textColor="tertiary">
+      <List textColor="tertiary">
+        <Appear>
           <ListItem margin="0 0 0.5em" textSize="2rem">
             This Presentation:&nbsp;
 
@@ -219,11 +219,19 @@ const Presentation = () => (
               http://bit.ly/IntroductionToReactPresentation
             </Link>
           </ListItem>
-        </List>
-      </Appear>
+        </Appear>
 
-      <Appear>
-        <List textColor="tertiary">
+        <Appear>
+          <ListItem margin="0 0 0.5em" textSize="2rem">
+            Code:&nbsp;
+
+            <Link bold href="http://bit.ly/IntroductionToReactCode" target="_blank" textColor="tertiary">
+              http://bit.ly/IntroductionToReactCode
+            </Link>
+          </ListItem>
+        </Appear>
+
+        <Appear>
           <ListItem margin="0 0 0.5em" textSize="2rem">
             Twitter:&nbsp;
 
@@ -231,8 +239,8 @@ const Presentation = () => (
               @InsidersByte
             </Link>
           </ListItem>
-        </List>
-      </Appear>
+        </Appear>
+      </List>
     </Slide>
   </Deck>
 );
