@@ -134,27 +134,85 @@ const Presentation = () => (
     </Slide>
 
     <Slide>
-      <Title margin="0 0 0.5em">What's Next?</Title>
-
       <List textColor="tertiary">
-        <ListItem margin="0 0 0.5em" textSize="2.45rem">
-          Coming Soon
-        </ListItem>
+        <Appear>
+          <ListItem margin="0 0 0.5em" textSize="2rem">
+            es6:&nbsp;
+
+            <Link bold href="http://es6-features.org/" target="_blank" textColor="tertiary">
+              http://es6-features.org/
+            </Link>
+          </ListItem>
+        </Appear>
+
+        <Appear>
+            <ListItem margin="0 0 0.5em" textSize="2rem">
+            eslint:&nbsp;
+
+            <Link bold href="https://www.npmjs.com/package/eslint-config-airbnb" target="_blank" textColor="tertiary">
+              https://www.npmjs.com/package/eslint-config-airbnb
+            </Link>
+          </ListItem>
+        </Appear>
+
+        <Appear>
+          <ListItem margin="0 0 0.5em" textSize="2rem">
+            redux:&nbsp;
+
+            <Link bold href="http://redux.js.org/" target="_blank" textColor="tertiary">
+              http://redux.js.org/
+            </Link>
+          </ListItem>
+        </Appear>
+
+        <Appear>
+          <ListItem margin="0 0 0.5em" textSize="2rem">
+            css-modules:&nbsp;
+
+            <Link bold href="https://github.com/css-modules/css-modules" target="_blank" textColor="tertiary">
+              https://github.com/css-modules/css-modules
+            </Link>
+          </ListItem>
+        </Appear>
+
+        <Appear>
+          <ListItem margin="0 0 0.5em" textSize="2rem">
+            webpack:&nbsp;
+
+            <Link bold href="https://webpack.js.org/" target="_blank" textColor="tertiary">
+              https://webpack.js.org/
+            </Link>
+          </ListItem>
+        </Appear>
       </List>
-    </Slide>
 
-    <Slide>
-      <Title margin="0 0 0.5em">Links</Title>
+      <Appear>
+        <Heading size={1} caps margin="0.5em 0 0.5em">Thanks!</Heading>
+      </Appear>
 
-      <List textColor="tertiary">
-        <ListItem margin="0 0 0.5em" textSize="2.3rem">
-          This Presentation:&nbsp;
+      <Appear>
+        <List textColor="tertiary">
+          <ListItem margin="0 0 0.5em" textSize="2rem">
+            This Presentation:&nbsp;
 
-          <Link href="http://bit.ly/IntroductionToReactPresentation" target="_blank" textColor="tertiary">
-            http://bit.ly/IntroductionToReactPresentation
-          </Link>
-        </ListItem>
-      </List>
+            <Link bold href="http://bit.ly/IntroductionToReactPresentation" target="_blank" textColor="tertiary">
+              http://bit.ly/IntroductionToReactPresentation
+            </Link>
+          </ListItem>
+        </List>
+      </Appear>
+
+      <Appear>
+        <List textColor="tertiary">
+          <ListItem margin="0 0 0.5em" textSize="2rem">
+            Twitter:&nbsp;
+
+            <Link bold href="https://twitter.com/insidersbyte" target="_blank" textColor="tertiary">
+              @InsidersByte
+            </Link>
+          </ListItem>
+        </List>
+      </Appear>
     </Slide>
   </Deck>
 );
