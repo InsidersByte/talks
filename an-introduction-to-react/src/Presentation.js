@@ -133,7 +133,7 @@ const Presentation = () => (
       <Title>This Presentation is written in React</Title>
     </Slide>
 
-    <Slide>
+    <Slide maxHeight={1000}>
       <List textColor="tertiary">
         <Appear>
           <ListItem margin="0 0 0.5em" textSize="2rem">
@@ -181,6 +181,26 @@ const Presentation = () => (
 
             <Link bold href="https://webpack.js.org/" target="_blank" textColor="tertiary">
               https://webpack.js.org/
+            </Link>
+          </ListItem>
+        </Appear>
+
+        <Appear>
+          <ListItem margin="0 0 0.5em" textSize="2rem">
+            jest:&nbsp;
+
+            <Link bold href="https://facebook.github.io/jest/" target="_blank" textColor="tertiary">
+              https://facebook.github.io/jest/
+            </Link>
+          </ListItem>
+        </Appear>
+
+        <Appear>
+          <ListItem margin="0 0 0.5em" textSize="2rem">
+            enzyme:&nbsp;
+
+            <Link bold href="http://airbnb.io/enzyme/" target="_blank" textColor="tertiary">
+              http://airbnb.io/enzyme/
             </Link>
           </ListItem>
         </Appear>
