@@ -1,11 +1,19 @@
 import React from 'react';
+import preloader from 'spectacle/lib/utils/preloader';
 import createTheme from 'spectacle/lib/themes/default';
-import { Deck, Link, Slide, List, ListItem, CodePane, Heading, ComponentPlayground, Appear } from 'spectacle';
+import { Deck, Link, Slide, List, ListItem, CodePane, Heading, ComponentPlayground, Appear, Image } from 'spectacle';
 import 'normalize.css';
 import 'spectacle/lib/themes/default/index.css';
 import IntroductionSlide from './IntroductionSlide';
 import Title from './Title';
 import { simpleJsx, simpleJs, props, state, lifecycles } from './codeExamples';
+
+const images = {
+  mock: require('../public/mock.png'),
+  components: require('../public/components.png'),
+};
+
+preloader(images);
 
 const theme = createTheme({
   primary: '#76a700',
@@ -25,6 +33,18 @@ const Presentation = () => (
 
     <Slide>
       <Title>What Isn't React</Title>
+    </Slide>
+
+    <Slide>
+      <Title>Components</Title>
+    </Slide>
+
+    <Slide maxHeight={1000}>
+      <Image src={images.mock} />
+
+      <Appear><Heading caps size={3} textColor="tertiary" margin="1rem 0">⬇️</Heading></Appear>
+
+      <Appear><Image src={images.components} /></Appear>
     </Slide>
 
     <Slide>
@@ -56,7 +76,7 @@ const Presentation = () => (
     </Slide>
 
     <Slide>
-      <Title>Demo Time</Title>
+      <Title>Demo Time!</Title>
     </Slide>
 
     <Slide>
@@ -126,15 +146,21 @@ const Presentation = () => (
     </Slide>
 
     <Slide>
-      <Title>Developer Experience</Title>
-    </Slide>
-
-    <Slide>
       <Title>This Presentation is written in React</Title>
     </Slide>
 
     <Slide maxHeight={1000}>
       <List textColor="tertiary">
+        <Appear>
+          <ListItem margin="0 0 0.5em" textSize="2rem">
+            react:&nbsp;
+
+            <Link bold href="https://facebook.github.io/react/" target="_blank" textColor="tertiary">
+              https://facebook.github.io/react/
+            </Link>
+          </ListItem>
+        </Appear>
+
         <Appear>
           <ListItem margin="0 0 0.5em" textSize="2rem">
             es6:&nbsp;
